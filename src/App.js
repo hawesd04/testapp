@@ -67,7 +67,7 @@ function App() {
           <FlyingPosters items={items}/>
         </div>
         <a
-            className="App-link2"
+            className="App-link"
             href="https://drive.google.com/file/d/118deVqaBWvdTc-cECFBO2co75_cURd29/preview"
             target="_blank"
             rel="noopener noreferrer"
