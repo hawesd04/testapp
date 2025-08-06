@@ -64,11 +64,12 @@ function App() {
           style={{ height: '600px', position: 'relative' }}>
           <FlyingPosters items={items}/>
         </div>
-        <video
-          src="applebees.mp4"
-        >
-
-        </video>
+        <div class="video-wrapper">
+          <video class="video" id="bVideo" loop controls>
+            <source src="applebees.mp4" type="video/mp4" />
+          </video>
+          <div id="playButton" class="playButton" onclick="playPause()"></div>
+        </div>
     </div>
   );
 }
