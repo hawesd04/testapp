@@ -17,8 +17,6 @@ const items = [
   'dilly.png'
 ];
 
-
-
 function App() {
   return (
     <div className="App">
@@ -66,14 +64,12 @@ function App() {
           style={{ height: '600px', position: 'relative' }}>
           <FlyingPosters items={items}/>
         </div>
-        <a
-            className="App-link"
-            href="https://drive.google.com/file/d/118deVqaBWvdTc-cECFBO2co75_cURd29/preview"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            MOVIE NIGTH!!! BUG!
-          </a>
+        <div class="video-wrapper">
+          <video class="video" id="bVideo" loop controls>
+            <source src="applebees.mp4" type="video/mp4" />
+          </video>
+          <div id="playButton" class="playButton" onclick="playPause()"></div>
+        </div>
     </div>
   );
 }
