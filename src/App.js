@@ -64,6 +64,11 @@ function App() {
           style={{ height: '600px', position: 'relative' }}>
           <FlyingPosters items={items}/>
         </div>
+        <video
+          src="applebees.mp4"
+        >
+
+        </video>
     </div>
   );
 }
